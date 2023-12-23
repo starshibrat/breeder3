@@ -19,7 +19,6 @@
  */
 
 using GLib;
-using LabgtkStruct;
 
 namespace Labgtk {
     public class Application : Gtk.Application {
@@ -32,7 +31,7 @@ namespace Labgtk {
                 { "about", this.on_about_action },
                 { "preferences", this.on_preferences_action },
                 { "quit", this.quit },
-                { "open", this.open_file }
+                
             };
             this.add_action_entries (action_entries, this);
             this.set_accels_for_action ("app.quit", {"<primary>q"});
@@ -49,34 +48,7 @@ namespace Labgtk {
             win.present ();
         }
 
-        private void open_file(){
-            //print("function was called");
-            Gtk.FileChooserDialog dialog = new Gtk.FileChooserDialog ("Load arff",
-                        this.active_window, Gtk.FileChooserAction.OPEN,
-                         "_Cancel", Gtk.ResponseType.CANCEL,
-                           "_Open", Gtk.ResponseType.ACCEPT, null);
-            // Gtk.Widget accept = dialog.get_widget_for_response (Gtk.ResponseType.ACCEPT);
-            dialog.response.connect (on_open_response);
-            // accept.connect ("clicked", on_open_response, null);
-            dialog.show ();
-        }
 
-        private void on_open_response(Gtk.Dialog dialog, int response){
-            //print("response code: %d\n", response);
-            //print("%d\n", Gtk.ResponseType.ACCEPT);
-            //print("%d\n", Gtk.ResponseType.CANCEL);
-            if(response == Gtk.ResponseType.ACCEPT){
-                print("on_open_response");
-                Gtk.FileChooser chooser = (Gtk.FileChooser)dialog;
-                GLib.File file = chooser.get_file();
-                LabgtkStruct.Document doc = IOUtil.load_file (file);
-                dialog.close();
-            }
-            else if(response == Gtk.ResponseType.CANCEL){
-                dialog.close();
-            }
-            //dialog.destroy();
-        }
 
         private void on_about_action () {
 

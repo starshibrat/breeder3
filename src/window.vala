@@ -17,7 +17,6 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-using LabgtkStruct;
 
 namespace Labgtk {
 
@@ -36,9 +35,7 @@ namespace Labgtk {
         [GtkChild]
         private unowned Gtk.Button loginButton;
         
-        //[GtkChild]
-        //private unowned Gtk.HeaderBar header_bar;
-        private Document document;
+
 
         public Window (Gtk.Application app) {
             Object (application: app);
@@ -78,9 +75,6 @@ namespace Labgtk {
             this.close();
         }
 
-        public void setDocument(Document document){
-            this.document = document;
-        }
 
         public void goToDashboard(User user){
             Gtk.Window win = this.app.active_window;

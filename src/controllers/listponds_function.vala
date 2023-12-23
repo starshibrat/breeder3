@@ -72,13 +72,13 @@ public class ListPondsFunction {
                                 pond.location = jsonObject.get_string_member("location");
                                 pond.shape = jsonObject.get_string_member("shape");
                                 pond.material = jsonObject.get_string_member("material");
-                                pond.length = jsonObject.get_double_member("length");
-                                pond.width = jsonObject.get_double_member("width");
-                                pond.diameter = jsonObject.get_double_member("member");
-                                pond.height = jsonObject.get_double_member("height");
-                                pond.image_name = jsonObject.get_string_member("image_name");
-                                pond.isActive = jsonObject.get_boolean_member("isActive");
-                                pond.build_at = convert_string_to_datetime(jsonObject.get_string_member("build_at"));
+                                //  pond.length = jsonObject.get_double_member("length");
+                                //  pond.width = jsonObject.get_double_member("width");
+                                //  pond.diameter = jsonObject.get_double_member("member");
+                                //  pond.height = jsonObject.get_double_member("height");
+                                //  pond.image_name = jsonObject.get_string_member("image_name");
+                                //  pond.isActive = jsonObject.get_boolean_member("isActive");
+                                //  pond.build_at = convert_string_to_datetime(jsonObject.get_string_member("build_at"));
 
 
                             }

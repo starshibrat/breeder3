@@ -22,7 +22,6 @@
 
 int main (string[] args) {
     var app = new Labgtk.Application ();
-    Sqlite.Database db;
 
     return app.run (args);
     //return 0;

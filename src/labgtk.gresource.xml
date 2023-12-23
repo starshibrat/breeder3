@@ -3,8 +3,6 @@
   <gresource prefix="/unj/dpbo/labgtk">
     <file preprocess="xml-stripblanks">window.ui</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
-    <file preprocess="xml-stripblanks">content_window.ui</file>
-    <file preprocess="xml-stripblanks">add_data.ui</file>
     <file preprocess="xml-stripblanks">register_page.ui</file>
     <file preprocess="xml-stripblanks">dashboard.ui</file>
     <file>style.css</file>
