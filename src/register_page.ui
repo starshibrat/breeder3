@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="LabgtkRegisterPage" parent="GtkApplicationWindow">
+  <property name="default-width">840</property>
+  <property name="default-height">480</property>
+  <property name="child">
+    <object class="GtkScrolledWindow">
+      <child>
+      <object class="GtkBox" id="primaryBoxLayout">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <property name="spacing">4</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">BreederID</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="username">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Password</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkPasswordEntry" id="password">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Name</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="name">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">NIK</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nik">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Phone</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="phone">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Sudah Punya Tempat Budidaya?</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkDropDown" id="hasFarmChoices">
+            <property name="model">
+              <object class="GtkStringList">
+                <items>
+                  <item translatable="yes">Belum</item>
+                  <item translatable="yes">Sudah</item>
+                </items>
+              </object>
+            </property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Nama Tempat Budidaya</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="farm_name">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Breeder</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="breeder">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Alamat</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="address">
+          </object>
+        </child>
+
+        
+
+        <child>
+          <object class="GtkButton" id="registerButton">
+            <property name="label">Register</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="goLogin">
+            <property name="label">Sudah punya akun? Login</property>
+          </object>
+        </child>
+
+
+
+      </object>
+    </child>
+  </object>  
+
+  </property>
+
+  </template>
+</interface>
+

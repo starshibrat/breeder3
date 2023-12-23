@@ -1,0 +1,6 @@
+data/unj.dpbo.labgtk.desktop.in
+data/unj.dpbo.labgtk.metainfo.xml.in
+data/unj.dpbo.labgtk.gschema.xml
+src/main.vala
+src/window.vala
+src/window.ui

@@ -1,0 +1,26 @@
+.style1{
+  margin-left: 16px;
+}
+
+entry{
+  margin: 16px;
+}
+
+.text-button{
+  margin: 16px;
+  color: green;
+  background-color: orchid;
+}
+
+label{
+  /*margin: 16px; */
+  min-width: 100px;
+  font-size: medium;
+  font-weight: 600;
+}
+
+/* #GtkButton{
+  margin: 16px;
+  color: red;
+  background-color: orchid;
+} */

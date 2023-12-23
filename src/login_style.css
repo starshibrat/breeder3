@@ -1,0 +1,22 @@
+.text-button{
+    margin: 16px;
+    color: green;
+    
+}
+
+label {
+    color: rgb(32, 105, 201);
+    
+}
+
+entry{
+    margin: 16px;
+    color: rgb(255, 255, 255);
+    
+}
+
+window {
+    background-color: rgb(25, 30, 53);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
