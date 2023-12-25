@@ -23,101 +23,119 @@
       </object>
     </property>
     <property name="child">
-      <object class="GtkBox" id="box">
-        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
-        <property name="spacing">3</property>
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Tambah Kolam</property>
-          </object>
-        </child>
+    <object class="GtkScrolledWindow">
+      <child>
+        <object class="GtkBox" id="box">
+          <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+          <property name="spacing">3</property>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Nama Kolam</property>
-          </object>
-        </child>
+            <!-- <child>
+              <object class="GtkButton" id="back">
+                <property name="label">Kembali</label>
+              </object>
+            </child> -->
 
-        <child>
-          <object class="GtkEntry" id="alias">
-          </object>
-        </child>
+            <child>
+              <object class="GtkButton" id="back">
+                <property name="label">Kembali</property>
+              </object>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Lokasi</property>
-          </object>
-        </child>
+            </child>
 
-        <child>
-          <object class="GtkEntry" id="location">
-          </object>
-        </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Tambah Kolam</property>
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Bentuk Kolam</property>
-          </object>
-        </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Nama Kolam</property>
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkEntry" id="shape">
-          </object>
-        </child>
+            <child>
+              <object class="GtkEntry" id="alias">
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Material</property>
-          </object>
-        </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Lokasi</property>
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkEntry" id="material">
-          </object>
-        </child>
+            <child>
+              <object class="GtkEntry" id="location">
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Panjang Kolam</property>
-          </object>
-        </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Bentuk Kolam</property>
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkEntry" id="length">
-          </object>
-        </child>
+            <child>
+              <object class="GtkEntry" id="shape">
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Lebar Kolam</property>
-          </object>
-        </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Material</property>
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkEntry" id="width">
-          </object>
-        </child>
+            <child>
+              <object class="GtkEntry" id="material">
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkLabel">
-            <property name="label">Tinggi Kolam</property>
-          </object>
-        </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Panjang Kolam</property>
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkEntry" id="height">
-          </object>
-        </child>
+            <child>
+              <object class="GtkEntry" id="length">
+              </object>
+            </child>
 
-        <child>
-          <object class="GtkButton" id="addButton">
-            <property name="label">Tambah</property>
-          </object>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Lebar Kolam</property>
+              </object>
+            </child>
 
-        </child>
-        
+            <child>
+              <object class="GtkEntry" id="width">
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Tinggi Kolam</property>
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkEntry" id="height">
+              </object>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="addButton">
+                <property name="label">Tambah</property>
+              </object>
+
+            </child>
           
-      </object>
+            
+        </object>
+      </child>
+    </object>
       
 
       <!-- <object class="GtkLabel" id="label">
