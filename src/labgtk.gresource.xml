@@ -5,6 +5,7 @@
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
     <file preprocess="xml-stripblanks">register_page.ui</file>
     <file preprocess="xml-stripblanks">dashboard.ui</file>
+    <file preprocess="xml-stripblanks">add_pond_page.ui</file>
     <file>style.css</file>
     <file>login_style.css</file>
     <file>assets/logov2.png</file>

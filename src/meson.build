@@ -11,6 +11,7 @@ labgtk_sources = [
   'models/pond.vala',
   'register_page.vala',
   'dashboard.vala',
+  'add_pond_page.vala'
 ]
 
 posix_dep = meson.get_compiler('vala').find_library('posix')

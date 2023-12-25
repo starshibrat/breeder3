@@ -8,6 +8,9 @@ namespace Labgtk {
         
         [GtkChild]
         private unowned Gtk.Box box;
+
+        [GtkChild]
+        private unowned Gtk.Button addPondButton;
         
         
         public DashboardPage (Gtk.Application app, User user) {
@@ -26,21 +29,27 @@ namespace Labgtk {
 
             List<Pond> ponds = ListPondsFunction.getPonds(this.user);
 
+            addPondButton.clicked.connect(() => {goToAddPondPage(this.user);});
+
             ponds.foreach ((entry) => {
-                Gtk.Label l1 = new Gtk.Label(entry.alias);
-                Gtk.Button detail = new Gtk.Button.with_label("Detail");
-                Gtk.Box box1 = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
-                box1.append(l1);
-                box1.append(detail);
-                box.append(box1);
+                var lb = new Gtk.Label(entry.alias);
+                var btn = new Gtk.Button.with_label("Detail");
+                var bx = new Gtk.Box(Gtk.Orientation.HORIZONTAL, 5);
+                bx.append(lb);
+                bx.append(btn);
+                box.append(bx);
             });
-
-
             
 
             
 
+        }
 
+        public void goToAddPondPage(User user){
+            Gtk.Window win = this.app.active_window;
+            win = new Labgtk.AddPondPage(this.app, user);
+            win.present();
+            this.close();
         }
 
         

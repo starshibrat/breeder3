@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk" version="4.0"/>
-  <template class="LabgtkDashboardPage" parent="GtkApplicationWindow">
+  <template class="LabgtkAddPondPage" parent="GtkApplicationWindow">
     <property name="default-width">840</property>
     <property name="default-height">480</property>
     <property name="titlebar">
       <object class="GtkHeaderBar" id="header_bar">
-        <!-- <child type="start">
-          <object class="GtkMenuButton">
-            <property name="primary">True</property>
-            <property name="icon-name">open-menu-symbolic</property>
-            <property name="tooltip-text" translatable="yes">Menu</property>
-            <property name="menu-model">primary_menu</property>
-          </object>
-        </child> -->
         <child type="start">
           <object class="GtkPopoverMenu">
             <property name="menu-model">popover_menu</property>
@@ -35,9 +27,93 @@
         <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
         <property name="spacing">3</property>
         <child>
-          <object class="GtkButton" id="addPondButton">
+          <object class="GtkLabel">
             <property name="label">Tambah Kolam</property>
           </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Nama Kolam</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="alias">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Lokasi</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="location">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Bentuk Kolam</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="shape">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Material</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="material">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Panjang Kolam</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="length">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Lebar Kolam</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="width">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Tinggi Kolam</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkEntry" id="height">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="addButton">
+            <property name="label">Tambah</property>
+          </object>
+
         </child>
         
           
