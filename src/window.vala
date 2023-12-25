@@ -34,6 +34,8 @@ namespace Labgtk {
         private unowned Gtk.PasswordEntry password;
         [GtkChild]
         private unowned Gtk.Button loginButton;
+        [GtkChild]
+        private unowned Gtk.Image image;
         
 
 
@@ -43,7 +45,7 @@ namespace Labgtk {
             //this.header_bar.
             Gtk.CssProvider css_provider = new Gtk.CssProvider ();
             css_provider.load_from_resource("/unj/dpbo/labgtk/login_style.css");
-            
+            image.set_from_resource("/unj/dpbo/labgtk/assets/logov2.png");
 
             Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
             

@@ -7,5 +7,6 @@
     <file preprocess="xml-stripblanks">dashboard.ui</file>
     <file>style.css</file>
     <file>login_style.css</file>
+    <file>assets/logov2.png</file>
   </gresource>
 </gresources>
