@@ -65,7 +65,7 @@ public class ListPondsFunction {
                             Pond pond = new Pond();
 
                             if (jsonObject != null){
-
+                                pond.id = jsonObject.get_string_member("_id");
                                 pond.farm_id = jsonObject.get_string_member("farm_id");
                                 pond.id_int = jsonObject.get_int_member("id_int");
                                 pond.alias = jsonObject.get_string_member("alias");
@@ -77,7 +77,7 @@ public class ListPondsFunction {
                                 //  pond.diameter = jsonObject.get_double_member("member");
                                 //  pond.height = jsonObject.get_double_member("height");
                                 //  pond.image_name = jsonObject.get_string_member("image_name");
-                                //  pond.isActive = jsonObject.get_boolean_member("isActive");
+                                pond.isActive = jsonObject.get_boolean_member("isActive");
                                 //  pond.build_at = convert_string_to_datetime(jsonObject.get_string_member("build_at"));
 
 

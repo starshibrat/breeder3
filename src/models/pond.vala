@@ -1,4 +1,5 @@
 public class Pond : GLib.Object, Json.Serializable{
+    public string id {get; set;}
     public string farm_id {get; set;}
     public int64 id_int {get; set;}
     public string alias {get; set;}
