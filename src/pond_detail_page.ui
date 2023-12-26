@@ -32,8 +32,36 @@
               </object>
 
         </child>
-
         <child>
+          <object class="GtkBox" id="box1">
+                <property name="name">box1</property>
+                <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+
+                <child>
+                  <object class="GtkBox" id="box12">
+                        <property name="name">box12</property>
+                        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">mandi</property>
+                          </object>
+                        </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox" id="box13">
+                        <property name="name">box13</property>
+                        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">mandidx</property>
+                          </object>
+                        </child>
+                  </object>
+                </child>
+          </object>
+        </child>
+        <!-- <child>
           <object class="GtkLabel" id="name_info">
             <property name="label">Nama Kolam: </property>
           </object>
@@ -47,12 +75,7 @@
           <object class="GtkLabel" id="shape_info">
             <property name="label">Bentuk: </property>
           </object>
-        </child>
-        
-
-
-        
-          
+        </child> -->
       </object>
       
 

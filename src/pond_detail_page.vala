@@ -12,14 +12,14 @@ namespace Labgtk {
         [GtkChild]
         private unowned Gtk.Box box;
         
-        [GtkChild]
-        private unowned Gtk.Label name_info;
+        //  [GtkChild]
+        //  private unowned Gtk.Label name_info;
 
-        [GtkChild]
-        private unowned Gtk.Label location_info;
+        //  [GtkChild]
+        //  private unowned Gtk.Label location_info;
 
-        [GtkChild]
-        private unowned Gtk.Label shape_info;
+        //  [GtkChild]
+        //  private unowned Gtk.Label shape_info;
         
         public PondDetailPage (Gtk.Application app, User user, Pond pond) {
             Object (application: app);
@@ -40,14 +40,21 @@ namespace Labgtk {
                     goToDashboard(this.user);
                 }
             );
-
+            var lb = new Gtk.Label(pond.alias);
+            Gtk.Button act;
+            if (pond.isActive==true){
+                act = new Gtk.Button.with_label("Aktif");
+                    act.set_name("active");
+                    act.set_id("active");
+                } else {
+                    act = new Gtk.Button.with_label("Tidak Aktif");
+                    act.set_name("inactive");
+                    act.set_id("inactive");
+                };
             
-            name_info.set_text (name_info.get_text () + pond.alias);
-            location_info.set_text(location_info.get_text() + pond.location);
-            shape_info.set_text(shape_info.get_text () + pond.shape);
-            
-
-            
+            //  name_info.set_text (name_info.get_text () + pond.alias);
+            //  location_info.set_text(location_info.get_text() + pond.location);
+            //  shape_info.set_text(shape_info.get_text () + pond.shape);
 
         }
 
