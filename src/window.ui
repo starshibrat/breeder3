@@ -31,13 +31,18 @@
       </object>
     </property>
     <property name="child">
-      <object class="GtkBox" id="box">
+    <object class="GtkScrolledWindow">
+    <child>
+      <object class="GtkBox">
         <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
         <property name="spacing">3</property>
+        <child>
+      <object class="GtkBox" id="orgbox">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
                     <child>
                       <object class="GtkImage" id="image">
                         <property name="visible">True</property>
-                        <property name="pixel-size">100</property>
+                        <property name="pixel-size">200</property>
                         <property name="margin-bottom">3</property>
                       </object>
                     </child>
@@ -53,9 +58,27 @@
                         <property name="name">org</property>
                       </object>
                     </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkGrid" id="grid">
+        <child>
+         <object class="GtkBox" id="box">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <!-- <property name="halign">center</property> -->
+        <!-- <property name="valign">center</property> -->
+        <property name="name">mainbox</property>
+        <property name="spacing">3</property>
+                    <child>
+                      <object class="GtkLabel">
+                      <property name="label">Login</property>
+                      <property name="name">logtitle</property>
+                      </object>
+                    </child>
                     <child>
                       <object class="GtkLabel">
                         <property name="label">BreederID</property>
+                        <property name="halign">GTK_ALIGN_START</property>
                       </object>
                     </child>
                     <child>
@@ -64,6 +87,7 @@
                     <child>
                       <object class="GtkLabel">
                         <property name="label">Password</property>
+                        <property name="halign">GTK_ALIGN_START</property>
                       </object>
                     </child>
                     <child>
@@ -82,7 +106,161 @@
                         <property name="name">registers</property>
                       </object>
                     </child>
+
+                    <layout>
+        <property name="column">0</property>
+        <property name="row">1</property>
+      </layout>
       </object>
+        
+        </child>
+
+        <child>
+
+        <object class="GtkBox" id="primaryBoxLayout">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <!-- <property name="halign">center</property> -->
+        <property name="spacing">4</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Register</property>
+            <property name="name">regtitle</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">BreederID</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="usernamer">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Password</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkPasswordEntry" id="passwordr">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Name</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="name">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">NIK</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="nik">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Phone</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="phone">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Sudah Punya Tempat Budidaya?</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkDropDown" id="hasFarmChoices">
+            <property name="model">
+              <object class="GtkStringList">
+                <items>
+                  <item translatable="yes">Belum</item>
+                  <item translatable="yes">Sudah</item>
+                </items>
+              </object>
+            </property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Nama Tempat Budidaya</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="farm_name">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Breeder</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="breeder">
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Alamat</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="address">
+          </object>
+        </child>
+
+        
+
+        <child>
+          <object class="GtkButton" id="registerButton">
+            <property name="label">Register</property>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkButton" id="goLogin">
+            <property name="label">Sudah punya akun? Login</property>
+          </object>
+        </child>
+
+        <layout>
+        <property name="column">1</property>
+        <property name="row">1</property>
+      </layout>
+
+
+
+      </object>  
+
+
+        </child>
+
+
+      </object>
+      </child>
+        
+      </object>
+    </child>
+    
+      </object>
+
+     
       
 
       <!-- <object class="GtkLabel" id="label">
